@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Data Attributes</title>	
+	<script src="../js/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/site.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+
+	<style>
+		.container{
+			display: inline-block;
+			width: 100%;
+			margin-top: 20px;
+			padding: 10px;
+		}
+		a{
+			background-color: blue;
+		}
+		a[href$=".pdf"]{
+			background-color: red;
+		}
+		a[href$=".txt"]{
+			background-color: green;
+		}
+		a[href$=".jpg"]{
+			background-color: orange;
+		}
+		
+		
+		button{
+			display: inline-block;
+			border: none;
+			padding: 10px 20px;
+			cursor: pointer;
+		}
+		button:hover{
+			background-color: darkgrey;
+		}
+		button[data-logged-in="true"]{
+			background-color: green;
+			color: #fff;
+		}
+		button[data-logged-in="true"]:hover{
+			background-color: lightgreen
+		}		
+	</style>
+</head>
+<body>
+	<h1>
+		HTML 5 Attributes and CSS
+	</h1>
+
+	<div class="container">
+		<button href="#" data-logged-in="true">I'm green because logged in</button>
+		<button>I'm just a regular button :(</button>
+	</div>
+
+
+	<div class="container">
+		<a href="www.website.com/page1">Regular Link</a>
+
+		<a href="www.abc.com/def.pdf">Link To PDF</a>
+
+		<a href="www.123.com/456.txt">Link To Txt</a>
+
+		<a href="www.lol.com/lel.jpg">Link To JPG</a>
+	</div>
+</body>
+</html>

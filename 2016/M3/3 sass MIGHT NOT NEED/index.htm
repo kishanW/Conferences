@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery.min.js"></script>
+</head>
+<body>
+	
+
+	<button id="toggle" data-count="0"> Click to add one to count</button>
+	<input id="counter"></input>
+	
+	<script>
+		$("#toggle").click(function(){
+			var toggle = $(this).data();
+			toggle.count = toggle.count + 1;
+			var counter = $("#counter").val(toggle.count);	
+		});
+	</script>
+</body>
+</html>

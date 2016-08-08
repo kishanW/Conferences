@@ -1,0 +1,39 @@
+a{
+	width: 100%;
+	height: auto;
+	line-height: normal;
+	padding: 10px 20px;
+	margin-top: 5px;
+	text-decoration: none;
+}
+
+button{
+	display: inline-block;
+	border: none;
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: #fff;
+	margin-top: 5px;
+	font-size: 20px;
+	width: 100%;
+}
+button:hover{background-color: #FF9800;}
+
+#output-list{
+	background-color: #eee;
+	display: inline-block;
+	width: 100%;
+	min-height: 400px;
+	max-height: 400px;
+	overflow: auto;
+}
+
+#output-list li{
+	display: inline-block;
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+}
+#output-list li:nth-child(even){
+	background-color: rgba(0,0,0,0.1);
+}

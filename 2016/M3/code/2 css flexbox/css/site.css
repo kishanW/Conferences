@@ -1,0 +1,87 @@
+*{
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none !important;
+}
+
+h1{
+	display: inline-block;
+	width: 100%;
+	background-color: #607D8B;
+	color: #fff;
+	font-size: 50px;
+	padding: 20px 10px;
+	margin-top: 0;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+
+/* 	flex container
+*************************/
+#flex-container{
+	display: flex;
+	width: 100%;
+	height: 400px;
+	background-color: #eee;
+	
+	/*	you are able to change direction of items*/
+	flex-direction: row; 
+
+	/*  you are able to change item alignment*/
+	/* column: vertical, row: horizontal*/
+	justify-content: center;
+
+	/* you need to remove the item height for this */
+	/* allows item vertical alignment*/
+	align-items: stretch;
+
+	
+}
+#flex-container .item{
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	background-color: #4CAF50;
+	color: #fff;
+	text-align: center;
+	margin: 10px;
+	font-size: 20px;
+}
+
+/* 	flex ordering demo
+	0 index
+*********************************/
+.item.first{
+	order: -1;
+}
+.item.last{
+	order: 3;
+}
+
+
+/*	for perfect centering
+*********************************/
+/*
+#flex-container .item:not(:last-child){
+	display: none;
+}
+#flex-container .item{
+	margin: auto;
+	width: 100px;
+	height: 100px;
+}
+*/
+
+
+/*	define sizes
+*********************************/
+
+#flex-container .item{
+	flex-grow: 1;
+}
+#flex-container .item.featured{
+	flex-grow: 4;
+}
